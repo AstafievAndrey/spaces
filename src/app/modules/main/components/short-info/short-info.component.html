@@ -1,1 +1,19 @@
-<mat-card>mat-card</mat-card>
+<mat-card>
+    <mat-card-header>
+        <img mat-card-avatar>
+        <mat-card-title>
+            {{info.title}}
+        </mat-card-title>
+        <mat-card-subtitle>
+                {{info.subTitle}}
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            {{info.desc}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions style="text-align:right">
+        <button mat-button>подробнее</button>
+    </mat-card-actions>
+</mat-card>

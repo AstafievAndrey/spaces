@@ -1,4 +1,27 @@
-<div class="list-spaces">
-  <app-short-info></app-short-info>
-  <app-short-info></app-short-info>
+<div class="main-pages-list">
+    <div class="list-spaces" [ngClass]="{'width-100': !filterShow}">
+        <app-short-info></app-short-info>
+        <app-short-info></app-short-info>
+        <app-short-info></app-short-info>
+        <app-short-info></app-short-info>
+        <app-short-info></app-short-info>
+        <app-short-info></app-short-info>
+        <app-short-info></app-short-info>
+        <app-short-info></app-short-info>
+        <div>
+            <mat-paginator [length]="length"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions"
+                (page)="pageEvent = $event">
+            </mat-paginator>
+        </div>
+    </div>
+    <div class="list-sidebar" *ngIf="filterShow">
+        <div class="list-sidebar-sticky">
+            <app-filter-info></app-filter-info>
+        </div>
+    </div>
 </div>
+
+
+

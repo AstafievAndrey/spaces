@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShortInfoComponent implements OnInit {
 
+  info = {
+    title: 'Title',
+    subTitle: 'subTitle',
+    desc: 'short Description'
+  };
+
   constructor() { }
 
   ngOnInit() {
